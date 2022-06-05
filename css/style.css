@@ -1,0 +1,25 @@
+@import url(./common.css);
+
+:root{
+  --main-color: #FFE6E6;
+  --accent-color: #DAEAF1;
+  --white-color: #fcfcfc;
+  --black-color: #090909;
+  --grey-color: #eeeeee;
+}
+
+body{
+  background: var(--grey-color);
+}
+
+/* 전체 카드 */
+.container-sm{
+  background: url(../image/weather2.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  margin: 10vh auto;
+  opacity: 0.8;
+  color: var(--black-color);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
