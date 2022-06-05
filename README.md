@@ -15,5 +15,5 @@
 
 ***
 ## Code Info
-* [OpenWeatherMap](https://openweathermap.org/)에서 날씨 정보 API ajax요청
-* 요청이 완료되면(.done) 로딩중 메시지 사라짐 + 날씨 정보 html에 데이터바인딩
+* [OpenWeatherMap](https://openweathermap.org/)에서 날씨 정보 API `ajax`요청
+* 요청이 완료되면(.done) 로딩중 메시지 사라짐 + 날씨 정보 html에 `데이터바인딩`
