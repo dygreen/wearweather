@@ -3,7 +3,7 @@
 >
 > [2022.06.05 ~ 2022.06.06]
 >
-> 주소: https://dygreen.github.io/wearweather/
+> 주소: https://dygreen.github.io/wearweather/index.html
 
 ***
 ## Service Info
