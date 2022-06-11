@@ -1,7 +1,7 @@
 # wearweather
 > 날씨 API를 이용한 기온별 옷차림 가이드 서비스
 >
-> [2022.06.05 ~ 2022.06.06]
+> [개인 프로젝트: 2022.06.05 ~ 2022.06.06]
 >
 > 주소: https://dygreen.github.io/wearweather/index.html
 
