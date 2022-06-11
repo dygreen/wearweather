@@ -22,8 +22,9 @@
 * [OpenWeatherMap](https://openweathermap.org/)에서 도시별 날씨 정보 API 요청
 * input창의 `keydown`이 `enter`일 때 그 값을 `ajax 요청 함수`의 `parameter`로 집어넣어 API 정보 가져옴
 * 요청이 완료되면(.done) 로딩중 메시지 사라짐 + 날씨 정보 html에 `데이터바인딩` + 배경이미지/옷차림 가이드 바뀜
+* [06.11] 모바일 반응형 화면 제작(media query)
 
 ***
 ## 개선할 사항 🚀
-* 100% vanila JS로 만들 것(ajax -> xhr?)
+* 100% vanila JS로 만들 것(ajax -> XML)
 * API를 불러오는데 걸리는 시간 단축 필요
