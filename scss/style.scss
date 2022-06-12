@@ -1,0 +1,195 @@
+@import url(./common.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+// 변수 선언
+$white-color: #fcfcfc;
+$black-color: #090909;
+$grey-color: #eeeeee;
+$accent-font: 'Poppins', sans-serif;
+
+body{
+  background: $grey-color;
+  h4{
+    /* 로딩중 */
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+/* 전체 카드 */
+.container-sm{
+  position: relative;
+  background: url(../image/weather2.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 768px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  color: $white-color;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.4s;
+  #weather{
+    /* =========== 날씨 부분(왼쪽) =========== */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .search{
+      /* 검색 */
+      margin-top: 50px;
+      text-align: center;
+      input{
+        width: 80%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid $grey-color;
+        color: $black-color;
+        text-indent: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      .iconify{
+        /* 검색 아이콘 */
+        font-size: 30px;
+        margin-left: -40px;
+        color: $black-color;
+      }
+    }
+    .weather_info{
+      /* 날씨 정보 */
+      margin-left: 10%;
+      margin-bottom: 10%;
+      line-height: 25px;
+      text-shadow: -1px 1px 3px #000000;
+      .city_name{
+        text-transform: uppercase;
+        font-size: 45px;
+      }
+      .date_info{
+        span{
+          font-size: 20px;
+          &:last-of-type{
+            font-size: 15px;
+            font-style: italic;
+            color: $grey-color;
+          }
+        }
+      }
+      .temp_all{
+        .temp_main{
+          display: inline-block;
+          font-family: $accent-font;
+          font-size: 170px;
+          margin-top: 60px;
+        }
+        img{
+          margin-left: -80px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  #wear{
+    /* =========== 옷차림 부분(오른쪽) =========== */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    width: 40%;
+    background: rgba(0,0,0,0.4);
+    .intro{
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .clothes{
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      li{
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+          background: $black-color;
+        }
+      }
+    }
+  }
+}
+
+/* 모바일 반응형 */
+@media screen and (max-width: 767px) {
+  body{
+    h4{
+      padding: 15px 10px 10px;
+    }
+  }
+
+  .container-sm{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    #weather{
+    /* =========== 날씨 부분(왼쪽) =========== */
+      width: 60%;
+      .search{
+        input{
+          width: 80%;
+        }
+      }
+      .weather_info{
+        line-height: 15px;
+        .city_name{
+          font-size: 30px;
+        }
+        .date_info{
+          span{
+            font-size: 15px;
+            &:last-of-type{
+              font-size: 12px;
+            }
+          }
+        }
+        .temp_all{
+          .temp_main{
+            width: 100%;
+            font-size: 120px;
+            margin-top: 50px;
+          }
+          img{
+            margin-left: 0;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    #wear{
+      /* =========== 옷차림 부분(오른쪽) =========== */
+      width: 35%;
+      .intro{
+        font-size: 20px;
+      }
+      .clothes{
+        font-size: 15px;
+        li{
+          height: 35px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}

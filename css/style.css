@@ -1,126 +1,123 @@
+@charset "UTF-8";
 @import url(./common.css);
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-:root{
-  --white-color: #fcfcfc;
-  --black-color: #090909;
-  --grey-color: #eeeeee;
-  --accent-font: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+body {
+  background: #eeeeee;
 }
 
-body{background: var(--grey-color);}
-
-/* 전체 카드 */
-.container-sm{
-  background: url(../image/weather2.jpg) no-repeat;
-  background-size: cover;
-  display: flex;
-  margin: 10vh auto;
-  width: 100%;
-  height: 768px;
-  border-radius: 15px;
-  color: var(--white-color);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  transition: all 0.4s;
-}
-
-/* 로딩중 */
-h4{
+body h4 {
+  /* 로딩중 */
   padding-top: 30px;
   text-align: center;
 }
 
-/* =========== 날씨 부분(왼쪽) =========== */
-section#weather{
+/* 전체 카드 */
+.container-sm {
+  position: relative;
+  background: url(../image/weather2.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 768px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  color: #fcfcfc;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.4s;
+}
+
+.container-sm #weather {
+  /* =========== 날씨 부분(왼쪽) =========== */
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* 검색 */
-.search{
+.container-sm #weather .search {
+  /* 검색 */
   margin-top: 50px;
   text-align: center;
 }
 
-input{
+.container-sm #weather .search input {
   width: 80%;
   height: 35px;
   border-radius: 5px;
-  border: 1px solid var(--grey-color);
-  color: var(--black-color);
+  border: 1px solid #eeeeee;
+  color: #090909;
   text-indent: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-/* 검색 아이콘 */
-.search .iconify{
+.container-sm #weather .search .iconify {
+  /* 검색 아이콘 */
   font-size: 30px;
   margin-left: -40px;
-  color: var(--black-color);
+  color: #090909;
 }
 
-/* 날씨 정보 */
-.weather_info{
+.container-sm #weather .weather_info {
+  /* 날씨 정보 */
   margin-left: 10%;
   margin-bottom: 10%;
   line-height: 25px;
   text-shadow: -1px 1px 3px #000000;
 }
 
-.city_name{
+.container-sm #weather .weather_info .city_name {
   text-transform: uppercase;
   font-size: 45px;
 }
 
-.date_info span{
+.container-sm #weather .weather_info .date_info span {
   font-size: 20px;
 }
 
-.date_info span:last-of-type{
+.container-sm #weather .weather_info .date_info span:last-of-type {
   font-size: 15px;
   font-style: italic;
-  color: var(--grey-color);
+  color: #eeeeee;
 }
 
-.temp_main{
+.container-sm #weather .weather_info .temp_all .temp_main {
   display: inline-block;
-  font-family: var(--accent-font);
+  font-family: "Poppins", sans-serif;
   font-size: 170px;
   margin-top: 60px;
 }
 
-.temp_all img{
+.container-sm #weather .weather_info .temp_all img {
   margin-left: -80px;
   margin-bottom: 10px;
 }
 
-/* =========== 옷차림 부분(오른쪽) =========== */
-section#wear{
+.container-sm #wear {
+  /* =========== 옷차림 부분(오른쪽) =========== */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 5%;
   width: 40%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.intro{
+.container-sm #wear .intro {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.clothes{
+.container-sm #wear .clothes {
   padding: 0;
   margin: 0;
   font-size: 20px;
 }
 
-.clothes li{
+.container-sm #wear .clothes li {
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -133,74 +130,61 @@ section#wear{
   transition: all 0.3s;
 }
 
-.clothes li:hover{
-  background: var(--black-color);
+.container-sm #wear .clothes li:hover {
+  background: #090909;
 }
 
 /* 모바일 반응형 */
-@media screen and (max-width: 767px){
-  .container-sm{
+@media screen and (max-width: 767px) {
+  body h4 {
+    padding: 15px 10px 10px;
+  }
+  .container-sm {
     width: 100%;
     max-width: 100%;
     height: 100%;
     margin: 0;
     border-radius: 0;
   }
-
-  h4{
-    padding: 15px 10px 10px;
-  }
-
-  /* =========== 날씨 부분(왼쪽) =========== */
-  section#weather{
+  .container-sm #weather {
+    /* =========== 날씨 부분(왼쪽) =========== */
     width: 60%;
   }
-
-  .input{
-    width: 100%;
+  .container-sm #weather .search input {
+    width: 80%;
   }
-
-  .weather_info{
+  .container-sm #weather .weather_info {
     line-height: 15px;
   }
-
-  .city_name{
+  .container-sm #weather .weather_info .city_name {
     font-size: 30px;
   }
-
-  .date_info span{
+  .container-sm #weather .weather_info .date_info span {
     font-size: 15px;
   }
-
-  .date_info span:last-of-type{
+  .container-sm #weather .weather_info .date_info span:last-of-type {
     font-size: 12px;
   }
-
-  .temp_main{
+  .container-sm #weather .weather_info .temp_all .temp_main {
     width: 100%;
     font-size: 120px;
     margin-top: 50px;
   }
-
-  .temp_all img{
+  .container-sm #weather .weather_info .temp_all img {
     margin-left: 0;
     margin-top: 10px;
   }
-
-  /* =========== 옷차림 부분(오른쪽) =========== */
-  section#wear{
+  .container-sm #wear {
+    /* =========== 옷차림 부분(오른쪽) =========== */
     width: 35%;
   }
-
-  .intro{
+  .container-sm #wear .intro {
     font-size: 20px;
   }
-
-  .clothes{
+  .container-sm #wear .clothes {
     font-size: 15px;
   }
-
-  .clothes li{
+  .container-sm #wear .clothes li {
     height: 35px;
     line-height: 35px;
   }
