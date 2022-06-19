@@ -53,7 +53,7 @@ body{
       }
       .iconify{
         /* 검색 아이콘 */
-        font-size: 30px;
+        font-size: 1.875rem;
         margin-left: -40px;
         color: $black-color;
       }
@@ -66,13 +66,13 @@ body{
       text-shadow: -1px 1px 3px #000000;
       .city_name{
         text-transform: uppercase;
-        font-size: 45px;
+        font-size: 2.813rem;
       }
       .date_info{
         span{
-          font-size: 20px;
+          font-size: 1.25rem;
           &:last-of-type{
-            font-size: 15px;
+            font-size: 0.938rem;
             font-style: italic;
             color: $grey-color;
           }
@@ -82,7 +82,7 @@ body{
         .temp_main{
           display: inline-block;
           font-family: $accent-font;
-          font-size: 170px;
+          font-size: 10.625rem;
           margin-top: 60px;
         }
         img{
@@ -102,14 +102,14 @@ body{
     width: 40%;
     background: rgba(0,0,0,0.4);
     .intro{
-      font-size: 35px;
+      font-size: 2.188rem;
       font-weight: bold;
       margin-bottom: 30px;
     }
     .clothes{
       padding: 0;
       margin: 0;
-      font-size: 20px;
+      font-size: 1.25rem;
       li{
         height: 40px;
         text-align: center;
@@ -154,20 +154,20 @@ body{
       .weather_info{
         line-height: 15px;
         .city_name{
-          font-size: 30px;
+          font-size: 1.875rem;
         }
         .date_info{
           span{
-            font-size: 15px;
+            font-size: 0.938rem;
             &:last-of-type{
-              font-size: 12px;
+              font-size: 0.75rem;
             }
           }
         }
         .temp_all{
           .temp_main{
             width: 100%;
-            font-size: 120px;
+            font-size: 7.5rem;
             margin-top: 50px;
           }
           img{
@@ -181,10 +181,10 @@ body{
       /* =========== 옷차림 부분(오른쪽) =========== */
       width: 35%;
       .intro{
-        font-size: 20px;
+        font-size: 1.25rem;
       }
       .clothes{
-        font-size: 15px;
+        font-size: 0.938rem;
         li{
           height: 35px;
           line-height: 35px;

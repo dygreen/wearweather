@@ -54,7 +54,7 @@ body h4 {
 
 .container-sm #weather .search .iconify {
   /* 검색 아이콘 */
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-left: -40px;
   color: #090909;
 }
@@ -69,15 +69,15 @@ body h4 {
 
 .container-sm #weather .weather_info .city_name {
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 2.813rem;
 }
 
 .container-sm #weather .weather_info .date_info span {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .container-sm #weather .weather_info .date_info span:last-of-type {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-style: italic;
   color: #eeeeee;
 }
@@ -85,7 +85,7 @@ body h4 {
 .container-sm #weather .weather_info .temp_all .temp_main {
   display: inline-block;
   font-family: "Poppins", sans-serif;
-  font-size: 170px;
+  font-size: 10.625rem;
   margin-top: 60px;
 }
 
@@ -106,7 +106,7 @@ body h4 {
 }
 
 .container-sm #wear .intro {
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -114,7 +114,7 @@ body h4 {
 .container-sm #wear .clothes {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .container-sm #wear .clothes li {
@@ -157,17 +157,17 @@ body h4 {
     line-height: 15px;
   }
   .container-sm #weather .weather_info .city_name {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .container-sm #weather .weather_info .date_info span {
-    font-size: 15px;
+    font-size: 0.938rem;
   }
   .container-sm #weather .weather_info .date_info span:last-of-type {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .container-sm #weather .weather_info .temp_all .temp_main {
     width: 100%;
-    font-size: 120px;
+    font-size: 7.5rem;
     margin-top: 50px;
   }
   .container-sm #weather .weather_info .temp_all img {
@@ -179,10 +179,10 @@ body h4 {
     width: 35%;
   }
   .container-sm #wear .intro {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .container-sm #wear .clothes {
-    font-size: 15px;
+    font-size: 0.938rem;
   }
   .container-sm #wear .clothes li {
     height: 35px;
