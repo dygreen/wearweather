@@ -33,7 +33,7 @@
 
 ***
 ## 개선할 사항 🚀
-* 100% vanila JS로 만들 것(ajax -> XML)
+* 100% vanila JS로 만들 것(`AJAX` -> `fetch()`)
 * API를 불러오는데 걸리는 시간 단축 필요
 
 ***
