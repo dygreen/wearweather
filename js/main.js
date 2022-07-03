@@ -17,21 +17,19 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 // 도시별 날씨 정보 API ajax요청(OpenWeatherMap 이용)
-function getJSON(city){
-  $.ajax({
-    url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=123740caa750a6a4d7dcbd0085a62e00&units=metric`,
-    dataType: 'json',
-    type: 'GET',
-    async: 'false', /* '비동기적(async)'으로 실행해 순차적이 아니라 완료되면 실행되도록 함 */
-  }).done(function(data){
+async function getJSON(city){
+  const OPEN_API_DOMAIN = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=123740caa750a6a4d7dcbd0085a62e00&units=metric`;
+
+  await fetch(OPEN_API_DOMAIN, {method: "GET"}) /* '동기적(sync)'으로 실행해 데이터 수신이 완료되면 순차적으로 실행되도록 함 */
+  .then((response) => response.json())
+  .then((data) => {
     $('h4').hide();
     getWeather(data); /* 데이터바인딩 */
     imgChange(data); /* 배경이미지 바꾸기 */
     clothChange(data); /* 옷차림 가이드 바꾸기 */
-  }).fail(function(){
-    alert('오류가 발생했습니다.');
-  });
-};
+  })
+  .catch(() => alert('오류가 발생했습니다.'));
+}
 
 
 // 날씨정보 데이터바인딩
