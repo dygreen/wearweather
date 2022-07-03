@@ -30,10 +30,47 @@
 * [06.11] 모바일 반응형 화면 제작(media query)
 * [06.12] css 코드 -> scss로 변경(컴파일링)
 * [06.19] `font-size` px 단위 -> rem 단위로 변경
+* [07.03] `AJAX` -> `fetch()` 로 변경 (`async/await` 사용)
+```javascript
+// 기존 코드 (AJAX)
+function getJSON(city){
+  $.ajax({
+    url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=123740caa750a6a4d7dcbd0085a62e00&units=metric`,
+    dataType: 'json',
+    type: 'GET',
+    async: 'false', 
+  }).done(function(data){
+    $('h4').hide();
+    getWeather(data);
+    imgChange(data);
+    clothChange(data);
+  }).fail(function(){
+    alert('오류가 발생했습니다.');
+  });
+};
+```
+<br>
+
+```javascript
+// 수정한 코드 (fetch)
+async function getJSON(city){
+  const OPEN_API_DOMAIN = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=123740caa750a6a4d7dcbd0085a62e00&units=metric`;
+
+  await fetch(OPEN_API_DOMAIN, {method: "GET"})
+  .then((response) => response.json())
+  .then((data) => {
+    $('h4').hide();
+    getWeather(data);
+    imgChange(data);
+    clothChange(data);
+  })
+  .catch(() => alert('오류가 발생했습니다.'));
+}
+```
 
 ***
 ## 개선할 사항 🚀
-* 100% vanila JS로 만들 것(`AJAX` -> `fetch()`)
+* ~~100% vanila JS로 만들 것(`AJAX` -> `fetch()`)~~
 * API를 불러오는데 걸리는 시간 단축 필요
 
 ***
