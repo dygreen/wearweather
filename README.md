@@ -17,7 +17,7 @@
 
 ***
 ## Code Info
-* 100% vanilla JS 코드
+* 90% vanilla JS 코드
 * Bootstrap을 이용해 반응형UI 설계
 * [OpenWeatherMap](https://openweathermap.org/)에서 도시별 날씨 정보 API 요청
 * input창의 `keydown`이 `enter`일 때 그 값을 `ajax 요청 함수`의 `parameter`로 집어넣어 API 정보 가져옴
