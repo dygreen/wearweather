@@ -1,4 +1,4 @@
-# wearweather
+# WearWeather
 > 날씨 API를 이용한 기온별 옷차림 가이드 서비스
 >
 > [개인 프로젝트: 2022.06.05 ~ 2022.06.06]
@@ -74,4 +74,4 @@ async function getJSON(city){
 * API를 불러오는데 걸리는 시간 단축 필요
 
 ***
-#### _* 자세한 실행과정 정리(노션: https://prickle-turn-785.notion.site/WearWeather-0056f45ce459414e94405ddc6ede7be7)_
+#### _* 자세한 실행과정 정리(노션: https://prickle-turn-785.notion.site/WearWeather-45278cb9e34a4957984aa8114ec4c0a8)_
