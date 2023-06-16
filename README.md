@@ -74,4 +74,4 @@ async function getJSON(city){
 * API를 불러오는데 걸리는 시간 단축 필요
 
 ***
-#### _* 자세한 실행과정 정리(노션: https://prickle-turn-785.notion.site/WearWeather-45278cb9e34a4957984aa8114ec4c0a8)_
+#### _* 자세한 프로젝트 실행과정 정리 ([노션](https://dygreen.notion.site/WearWeather-26860b018acd4997a6c9363379d2c159?pvs=4))_
